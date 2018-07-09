@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Train Scheduler</title>
+
+    <link rel="icon" href="./assets/favicon-train.ico" type="image/gif">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One|Raleway" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--firebase-->
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+    <!--Moment-->
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+
+  </head>
+
+  <body style="background-image: url(./assets/backgrounds/swirl_pattern.png)">
+            <div class="jumbotron jumbotron-fluid text-center text-white bg-success" style="border-bottom: 30px solid #333">
+                    <div class="container">
+                <h1 class="display-3" style="font-family: 'Paytone One', sans-serif;"><strong>Train Time Scheduler</strong></h1>
+                <hr style="border-top: 1px solid #8c8b8b;
+                border-bottom: 2px solid #fff;">
+                <h3 style="font-family: 'Raleway', sans-serif;"><strong> Build Your Own Train Schedule </strong></h3>
+                </div>
+            </div>
+
+            
+    
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header bg-success text-white" style="font-family: 'Raleway', sans-serif;">
+                    <h3><strong>Current Train Schedules</strong></h3>
+                </div>
+                <div class="card-body">
+                        <div class="container">
+                    <table class="table table-hover text-center" style="font-family: 'Raleway', sans-serif; " id="trainTable">
+                            
+                        <thead>
+                                
+                            <tr>
+                                <th><strong>Train Name</strong></th>
+                                <th><strong>Destination</strong></th>
+                                <th><strong>Frequency (min)</strong></th>
+                                <th><strong>Next Arrival</strong></th>
+                                <th><strong>Minutes Away</strong></th>
+                            </tr>
+                           
+                        </thead>
+                    
+                        <tbody>
+<!--Empty to fill in with train data -->
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header bg-success text-white" style="font-family: 'Raleway', sans-serif;">
+                    <h3><strong>Add a Train to the Schedule</strong></h3>
+                </div>
+                <div class="container">
+                <div class="card-body">
+                    <form>
+                    <div class="form-group">
+                            <label for="">Train Name</label>
+                            <input type="text" class="form-control" id="trainNameInput">
+                    </div>
+                    <div class="form-group">
+                            <label for="">Destination</label>
+                            <input type="text" class="form-control" id="destinationInput">
+                    </div>
+                    <div class="form-group">
+                            <label for="">First Train Time (HH:mm - 24HR CLOCK)</label>
+                            <input type="text" class="form-control" id="firstTrainInput">
+                    </div>
+                    <div class="form-group">
+                            <label for="">Frequency (Mins)</label>
+                            <input type="text" class="form-control" id="frequencyInput">
+                    </div>
+                </form>
+                    <button  class="btn btn-success" id="addTrainBtn">Submit!</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<footer class="footer text-center text-white" style="width:100%; float:left; background:#28a745; height:100px; font-size: 10px; border-top: 30px solid #333">
+    <br><br>
+    <p> &copy; 2018 Copyright Melvyn Ling</p>
+     
+</footer>
+
+<script src="./assets/javascript/logic.js"></script>
+</body>
+
+
+</html>
