@@ -30,7 +30,7 @@
 
       alert("Train Added!");
 
-      $("#trainInput").val("");
+      $("#trainNameInput").val("");
       $("#destinationInput").val("");
       $("#firstTrainInput").val("");
       $("#frequencyInput").val("");
