@@ -8,8 +8,8 @@
     storageBucket: "practiseproject-90c9e.appspot.com",
     messagingSenderId: "512909133237"
   };
+  
   firebase.initializeApp(config);
-
 
   var trainData = firebase.database();
 
@@ -36,7 +36,7 @@
       $("#frequencyInput").val("");
 
       return false;
-  })
+  });
 
   trainData.ref().on("child_added",function(snapshot){
       var name = snapshot.val().name;
