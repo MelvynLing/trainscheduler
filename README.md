@@ -1,5 +1,7 @@
 # TRAIN SCHEDULER
 ![](assets/ts1.png)
+
+------
 Check out the live app below!
 https://melvynling.github.io/trainscheduler/. 
 
