@@ -21,10 +21,10 @@ When the page loads, the user is present with a train schedule that displays pas
 ![](assets/ts3.png)
 
 the form allows the user to input a new inquiry. 
--All one needs to do is fill out the train's name.
--fill out the train's end place destination
--fill out the first departure time of the train in question
--fill out the train's departure frequency.
+* All one needs to do is fill out the train's name.
+* fill out the train's end place destination
+* fill out the first departure time of the train in question
+* fill out the train's departure frequency.
 
 Once these are done, hit submit. Once the details have been submitted, the data is sent to google Firebase to be stored and retrieved when needed.
 
