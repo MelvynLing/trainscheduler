@@ -1,4 +1,5 @@
 # TRAIN SCHEDULER
+![](assets/ts1.png)
 Check out the live app below!
 https://melvynling.github.io/trainscheduler/. 
 
@@ -14,8 +15,10 @@ the app uses momentJS to calculate when the users next train will arrive. It als
 When the page loads, the user is present with a train schedule that displays past inquiries as well as a form that allows the user to input a new train inquiry. 
 
 ### The Current Train Schedule:
+![](assets/ts2.png)
 
 ### Add a Train to the Schedule Form:
+![](assets/ts3.png)
 
 the form allows the user to input a new inquiry. 
 -All one needs to do is fill out the train's name.
